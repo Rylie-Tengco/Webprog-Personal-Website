@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #0A0A0A; /* Dark background */
-    color: #E0E0E0; /* Light text color for contrast */
+    background-color: #0A0A0A;
+    color: #E0E0E0;
     margin: 0;
     padding: 0;
 }
@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 .flex-container > div {
-    background-color: #101820; /* Dark blue-black for cards */
+    background-color: #101820;
     padding: 20px;
     margin: 10px;
     text-align: center;
@@ -45,7 +45,7 @@ img {
     height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
-    border: 2px solid #0074D9; /* Blue border for images */
+    border: 2px solid #0074D9;
 }
 
 table {
@@ -67,7 +67,7 @@ ul {
 }
 
 a {
-    color: #0074D9; /* Highlight links in blue */
+    color: #0074D9;
     text-decoration: none;
     font-weight: bold;
 }
