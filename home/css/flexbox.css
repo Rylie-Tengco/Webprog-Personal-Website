@@ -1,43 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0A0A0A; /* Dark background */
+    color: #E0E0E0; /* Light text color for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, p {
+    color: #E0E0E0;
+    text-align: center;
+}
+
 .flex-container {
-            display: flex;
-            flex-wrap: wrap;
-            background-color: DodgerBlue;
-        }
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #001F3F, #0074D9);
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
 
-        .flex-container > div {
-            background-color: #f1f1f1;
-            width: 100px;
-            margin: 10px;
-            text-align: center;
-            line-height: 75px;
-            font-size: 30px;
-        }
+.flex-container > div {
+    background-color: #101820; /* Dark blue-black for cards */
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 
-        .profile-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-        }
+.flex-container > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
 
-        .profile-container img {
-            width: 200px;
-            height: 200px;
-            border-radius: 10px;
-        }
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #0074D9; /* Blue border for images */
+}
 
-        .table-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: space-evenly;
-        }
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
 
-        table {
-            margin: 10px;
-            border-collapse: collapse;
-        }
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #0074D9;
+}
 
-        th, td {
-            padding: 10px;
-        }
+ul {
+    list-style-type: none;
+    padding: 0;
+    color: #E0E0E0;
+}
+
+a {
+    color: #0074D9; /* Highlight links in blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .flex-container > div {
+        width: 90%;
+    }
+}
