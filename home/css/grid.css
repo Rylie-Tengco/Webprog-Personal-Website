@@ -1,31 +1,52 @@
-        .item1 { grid-area: about; }
-        .item2 { grid-area: education; }
-        .item3 { grid-area: course; }
-        .item4 { grid-area: games; }
-        .item5 { grid-area: manga; }
-        .item6 { grid-area: anime; }
+    .item1 { grid-area: about; }
+    .item2 { grid-area: education; }
+    .item3 { grid-area: course; }
+    .item4 { grid-area: games; }
+    .item5 { grid-area: manga; }
+    .item6 { grid-area: anime; }
 
-        .grid-container {
-            display: grid;
-            grid-template-areas:
-                'about education course'
-                'games games games'
-                'manga manga manga'
-                'anime anime anime';
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 10px;
-            background-color: #2196F3;
-            padding: 10px;
-        }
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'about education course'
+            'games games games'
+            'manga manga manga'
+            'anime anime anime';
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+    }
 
-        .grid-container > div {
-            background-color: rgba(255, 255, 255, 0.8);
-            text-align: center;
-            padding: 20px 0;
-            font-size: 20px;
-        }
+    .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-        img {
-            max-width: 100%;
-            height: auto;
-        }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    th img {
+        display: block;
+        margin: 0 auto;
+    }
