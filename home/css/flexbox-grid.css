@@ -1,77 +1,87 @@
 body {
-    font-family: Arial, sans-serif;
     background-color: #000000;
-    color: #FFFFFF;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-h1, h2, h3, h4, h5 {
-    color: #1E90FF;
+header {
+    background-color: #1e1e1e;
+    color: #00bfff;
+    padding: 20px;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
 }
 
 hr {
-    border: 1px solid #1E90FF;
+    border: 0;
+    border-top: 1px solid #00bfff; 
+    width: 50%;
+    margin: 10px auto;
 }
 
-p {
-    margin: 10px 0;
-}
 
-img {
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #333333; 
     border-radius: 10px;
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0;
+h2, h3, h4 {
+    color: #00bfff;
+}
+
+h5 {
+    color: #ffffff;
+}
+
+p, ul {
+    color: #ffffff;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-ul li {
-    margin: 5px 0;
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
 table {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
-    max-width: 1000px;
-    text-align: center;
-    justify-items: center;
-
-table img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    border: 2px solid #1E90FF;
+    margin-top: 20px;
+    border-collapse: collapse;
 }
 
 table th, table td {
-    color: #FFFFFF;
-    background-color: #1E90FF;
     padding: 10px;
-    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #00bfff;
 }
 
-button {
-    background-color: #1E90FF;
-    color: #FFFFFF;
-    border: none;
-    padding: 10px 20px;
+table th {
+    background-color: #444444;
+}
+
+table td {
+    background-color: #555555;
+}
+
+table img {
+    width: 80px;
+    height: 80px;
     border-radius: 5px;
-    cursor: pointer;
 }
 
-button:hover {
-    background-color: #104E8B;
+footer {
+    background-color: #1e1e1e;
+    color: #00bfff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
 }
