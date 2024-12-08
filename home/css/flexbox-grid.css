@@ -2,15 +2,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #1a1a1a; 
+    color: #e0e0e0; 
 }
 
 header {
     text-align: center;
-    background-color: #3b5998;
-    color: #fff;
+    background-color: #003366; 
+    color: #ffffff;
     padding: 10px 0;
-    font-size: 1.5em;
+    font-size: 1.8em;
+    font-weight: bold;
 }
 
 .container {
@@ -18,7 +20,6 @@ header {
     margin: 20px auto;
     padding: 0 15px;
 }
-
 
 .section {
     display: flex;
@@ -28,15 +29,16 @@ header {
     margin-bottom: 20px;
 }
 
-
 .card {
-    background-color: #fff;
+    background-color: #003366; 
+    border: 1px solid #0066cc;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
     padding: 20px;
-    flex: 1 1 calc(33.333% - 20px);
+    flex: 1 1 calc(33.333% - 20px); 
     max-width: calc(33.333% - 20px);
     text-align: center;
+    color: #ffffff; 
 }
 
 .card img {
@@ -44,51 +46,57 @@ header {
     height: 100px;
     border-radius: 50%;
     margin-bottom: 15px;
+    border: 2px solid #ffffff;
 }
 
 .card h3 {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-bottom: 10px;
-    color: #3b5998;
+    color: #66ccff;
 }
 
 .card p, .card ul {
     font-size: 0.9em;
-    color: #333;
+    color: #e0e0e0;
 }
+
+.card ul li {
+    margin-bottom: 5px;
+}
+
 
 .picture-gallery {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.picture-row {
+    display: flex;
+    justify-content: space-evenly;
     gap: 15px;
 }
 
-.picture-gallery img {
+.picture-row img {
     max-width: calc(25% - 10px);
-    flex: 1 1 calc(25% - 10px);
+    flex: 1 1 25%;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    border: 2px solid #0066cc;
 }
 
 @media screen and (max-width: 768px) {
-    .card {
-        flex: 1 1 calc(50% - 20px);
-        max-width: calc(50% - 20px);
-    }
-
-    .picture-gallery img {
+    .picture-row img {
         max-width: calc(33.333% - 10px);
+        flex: 1 1 calc(33.333% - 10px);
     }
 }
 
 @media screen and (max-width: 480px) {
-    .card {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-
-    .picture-gallery img {
+    .picture-row img {
         max-width: calc(50% - 10px);
+        flex: 1 1 calc(50% - 10px);
     }
 }
