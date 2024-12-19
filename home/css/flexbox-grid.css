@@ -11,37 +11,28 @@ header {
     background-color: #003366;
     color: #ffffff;
     padding: 10px 0;
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: bold;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Increased gap between sections */
-    justify-content: space-between;
+    gap: 20px;
     padding: 20px;
-}
-
-.section {
-    flex: 1 1 calc(33.333% - 20px);
-    min-width: 300px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    justify-content: center;
 }
 
 .card {
     background-color: #003366;
-    border: 1px solid #0066cc;
+    border: 2px solid #0066cc;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
     padding: 20px;
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
     text-align: center;
     color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .card img {
@@ -53,59 +44,29 @@ header {
 }
 
 .card h3 {
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin-bottom: 10px;
     color: #66ccff;
 }
 
 .card p, .card ul {
-    font-size: 0.9em;
+    font-size: 1em;
     color: #e0e0e0;
 }
 
-.card ul li {
-    margin-bottom: 5px;
-}
-
 .picture-gallery {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin: 20px auto;
-    max-width: 1200px;
+    padding: 20px;
 }
 
 .picture-row {
     display: flex;
-    justify-content: space-evenly;
     gap: 15px;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .picture-row img {
-    width: calc(33.333% - 10px);
-    max-width: 100%;
+    max-width: calc(25% - 10px);
+    flex: 1;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
     border: 2px solid #0066cc;
-}
-
-@media screen and (max-width: 768px) {
-    .picture-row img {
-        width: calc(50% - 10px); /* Adjust for medium screens */
-    }
-
-    .section {
-        flex: 1 1 calc(50% - 20px); /* Adjust section for medium screens */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .picture-row img {
-        width: calc(100% - 10px); /* Full-width images on small screens */
-    }
-
-    .section {
-        flex: 1 1 calc(100% - 20px); /* Full-width sections on small screens */
-    }
 }
