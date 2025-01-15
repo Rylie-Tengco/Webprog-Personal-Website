@@ -22,11 +22,10 @@
                 <li><a href="#interests">Interests</a></li>
                 <li><a href="#goals">Goals</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#guestbook">Book of Entries</a></li>
+                <li><a href="#guestbook">Survey</a></li>
             </ul>
         </div>
     </nav>
-
     <section id="home">
         <div class="hero-content">
             <h1 data-aos="fade-up">I'm Rylie Tengco but call me Rylie</h1>
@@ -35,7 +34,6 @@
             </div>
         </div>
     </section>
-
     <section id="about">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">About Me</h2>
@@ -61,7 +59,6 @@
             </div>
         </div>
     </section>
-
     <section id="education">
         <div class="container">
             <h2>Education</h2>
@@ -78,7 +75,6 @@
             </div>
         </div>
     </section>
-
     <section id="interests">
         <div class="container">
             <h2>Interests & Hobbies</h2>
@@ -102,7 +98,6 @@
             </div>
         </div>
     </section>
-
     <section id="goals">
         <div class="container">
             <h2>Goals</h2>
@@ -122,7 +117,6 @@
             </div>
         </div>
     </section>
-
     <section id="gallery">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Gallery</h2>
@@ -178,10 +172,9 @@
             </div>
         </div>
     </section>
-
     <section id="guestbook">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Book of Entries</h2>
+            <h2 class="section-title" data-aos="fade-up">Survey</h2>
             <form id="guestbook-form" data-aos="fade-up" data-aos-delay="200">
                 <div class="form-group">
                     <input type="text" id="name" required>
@@ -192,31 +185,38 @@
                     <label for="email">Your Email</label>
                 </div>
                 <div class="form-group">
-                    <textarea id="message" required></textarea>
-                    <label for="message">Your Message</label>
+                    <label for="age">Your Age</label>
+                    <input type="number" id="age" required>
                 </div>
-                <div class="rating">
-                    <input type="radio" id="star5" name="rating" value="5">
-                    <label for="star5" class="fas fa-star"></label>
-                    <input type="radio" id="star4" name="rating" value="4">
-                    <label for="star4" class="fas fa-star"></label>
-                    <input type="radio" id="star3" name="rating" value="3">
-                    <label for="star3" class="fas fa-star"></label>
-                    <input type="radio" id="star2" name="rating" value="2">
-                    <label for="star2" class="fas fa-star"></label>
-                    <input type="radio" id="star1" name="rating" value="1">
-                    <label for="star1" class="fas fa-star"></label>
+                <div class="form-group">
+                    <label for="occupation">Your Occupation</label>
+                    <input type="text" id="occupation" required>
                 </div>
-                <button type="submit" class="submit-btn">Send Message</button>
+                <div class="form-group">
+                    <label for="feedback">Your Feedback</label>
+                    <textarea id="feedback" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="improvements">Suggestions for Improvements</label>
+                    <textarea id="improvements" required></textarea>
+                </div>
+                <div class="form-group">
+                    <select id="experience" required>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="average">Average</option>
+                        <option value="poor">Poor</option>
+                        <option value="very_poor">Very Poor</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Submit Survey</button>
             </form>
         </div>
     </section>
-
     <div id="lightbox" class="lightbox">
         <span class="close">&times;</span>
         <img id="lightbox-img" src="" alt="Gallery Image">
     </div>
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
