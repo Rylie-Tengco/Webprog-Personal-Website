@@ -1,79 +1,65 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
     margin: 0;
     padding: 0;
-    color: #000;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
 }
 
-h1, h2, h3, h4, h5 {
-    color: #004080;
+h1 {
     text-align: center;
+    margin-top: 20px;
+    color: #007BFF; /* Blue text */
 }
 
 hr {
-    border: 1px solid #004080;
+    border: 0;
+    height: 1px;
+    background: #007BFF; /* Blue line */
+    background-image: linear-gradient(to right, #0056b3, #007BFF, #0056b3);
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin: 20px;
-}
-
-.card {
-    background-color: #e6f2ff;
-    border: 1px solid #004080;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 300px;
-    padding: 20px;
+.buttons {
     text-align: center;
+    margin: 20px 0;
 }
 
-.card img {
-    max-width: 100%;
-    border-radius: 10px;
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF; /* Blue background */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.card h4 {
-    margin-top: 10px;
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #1f1f1f; /* Darker background for sections */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
 }
 
-table th, table td {
-    border: 1px solid #004080;
-    padding: 10px;
+table th {
+    border: 1px solid #333;
+    padding: 8px;
+}
+
+table td {
+    border: 1px solid #333;
+    padding: 8px;
     text-align: center;
-}
-
-table img {
-    width: 100px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.about, .education, .hobbies, .goals {
-    width: 100%;
-    margin: 20px 0;
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-.gallery img {
-    max-width: 200px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
